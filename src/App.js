@@ -1,42 +1,41 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import './App.css';
+import Courses from './components/Courses/Courses';
+import OutletHeader from './components/Layout/Outlet';
+import Footer from './components/Layout/Footer/Footer';
+import Login from './components/Auth/login/Login';
+import Register from './components/Auth/register/Register';
+import ForgetPassword from './components/Auth/ForgetPassword';
+import ResetPassword from './components/Auth/ResetPassword';
+import Contact from './components/Auth/Contact';
+import Request from './components/Request/Request';
+import About from './components/about/About';
+import Subscribe from './components/Payment/Subscribe';
+import PaymentSuccess from './components/Payment/PaymentSuccess';
 
-function App() {
+const App = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <>
+      <Routes>
+        <Route path="/" element={<OutletHeader />}>
+          <Route index element={<Home />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgetPassword" element={<ForgetPassword />} />
+          <Route path="/resetPassword/:token" element={<ResetPassword />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/request" element={<Request />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/subscribe" element={<Subscribe />} />
+          <Route path="/paymentSuccess" element={<PaymentSuccess />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

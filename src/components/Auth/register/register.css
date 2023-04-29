@@ -1,0 +1,24 @@
+.avatar{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 2px auto;
+}
+.input{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    height: 100%;
+    color: orangered;
+    background-color: white;
+}
+.dp{
+    height: 65px;
+    width: 66px;
+   
+
+}
+.dp>img{
+    border-radius: 50%;
+}

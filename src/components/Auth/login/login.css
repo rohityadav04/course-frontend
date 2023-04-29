@@ -1,0 +1,47 @@
+
+
+
+.forget-btn{
+    color: #eee;
+    font-weight: 500;
+}
+.login-btn>button{
+    background-color:rgb(241, 245, 7);
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.login-btn>button:hover{
+    cursor: pointer;
+    background-color:yellowgreen;
+}
+.new-user{
+    color: #eee;
+    font-weight: 500;
+}
+.new-user>a{
+    color: #eee;
+}.login-container{
+    min-height: 75vh;
+    background-image: linear-gradient(to right,#635dc0,#3027ae);
+    width: 100%;
+    padding: 2rem;
+   
+}
+.login-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+    width: 100%;
+    
+
+
+}
+span{
+    color: orange;
+}

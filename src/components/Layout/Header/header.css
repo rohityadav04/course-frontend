@@ -1,0 +1,125 @@
+.menu{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color:#ffff;
+}
+.side_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3027ae;
+    margin-left: 30px;
+}
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 30px;
+    gap: 1.9rem;
+}
+.sideMenu a{
+    
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+    font-weight:400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.4s;
+}
+.sideMenu a:hover{
+    color: #271bc9;
+}
+.auth{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 2rem;
+    left: 20px;
+}
+.authbutton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 7px;
+}
+.authbutton a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    background-color: rgb(241, 245, 7);
+    padding: 8px 9px;
+    border-radius: 5px;
+    transition: 0.5s all;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+.text{
+    color: grey;
+    font-size: 1rem;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.profileitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btnprofile{
+   margin-right: 0.5rem;
+   background-color:rgb(241, 245, 7) ;
+   padding: 10px;
+   border-radius: 5px;
+   transition: 0.5s all;
+   font-weight: 500;
+
+}
+.btnlogout{
+    margin-left: 0.5rem;
+   background-color:rgb(241, 245, 7) ;
+   padding: 10px;
+   border-radius: 5px;
+   transition: 0.5s all;
+   font-weight: 500;
+
+
+
+}
+.btnprofile:hover,.btnlogout:hover{
+    cursor: pointer;
+    background-color: yellowgreen; 
+}
+
+.dbtn{
+    margin-right: 0.5rem;
+   background-color:orangered;
+   padding: 10px;
+   border-radius: 5px;
+   transition: 0.5s all;
+   color: #fff;
+   font-weight: 500;
+}
+.dbtn:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: #fff;
+}
